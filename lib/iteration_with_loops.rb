@@ -4,7 +4,7 @@ def join_nested_strings(src)
   src.flatten!
   message = ""
   for item in src
-    message += item.class === "String" ? item : ""
+    message += item.class === "String" ? item + " " : ""
   end
   message
 end
