@@ -5,5 +5,6 @@ def join_nested_strings(src)
   message = ""
   for item in src
     message += item.class === "String" ? item : ""
+  end
   message
 end
